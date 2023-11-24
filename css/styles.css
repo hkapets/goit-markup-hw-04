@@ -78,6 +78,10 @@ img {
   text-decoration-line: none;
   padding: 24px 0;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link:hover {
   color: #404bbf;
@@ -85,9 +89,24 @@ img {
 }
 .header-nav-link:focus {
   color: #404bbf;
-  text-decoration: underline;
+  text-decoration: none;
 }
-
+.studio-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.studio-link:hover::after {
+  content: "";
+  background-color: #404bbf;
+  width: 48px;
+  height: 4px;
+  border: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
 .header-address {
   font-style: normal;
 }
@@ -113,6 +132,10 @@ img {
   text-decoration-line: none;
   padding: 24px 0;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -163,8 +186,13 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-right: auto;
   margin-left: auto;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
@@ -276,6 +304,13 @@ img {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-contacts-link:hover {
+  background-color: #404bbf;
 }
 .team-social-icon {
   fill: white;
@@ -299,6 +334,11 @@ img {
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+}
+.portfolio-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .product-title {
   color: #2e2f42;
@@ -365,6 +405,13 @@ img {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contacts-link:hover {
+  background-color: #31d0aa;
 }
 .footer-social-icon {
   fill: white;
