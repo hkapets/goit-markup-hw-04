@@ -154,7 +154,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.png);
+    url(/images/people-office.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -345,6 +345,11 @@ img {
   padding-top: 40px;
   padding-right: 32px;
   padding-left: 32px;
+}
+.portfolio-item-container:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-item-container:hover .overlay-container {
   transform: translateY(0);
