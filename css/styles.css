@@ -84,13 +84,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav-link:hover {
-  color: #404bbf;
-  text-decoration-line: none;
-}
+.header-nav-link:hover,
 .header-nav-link:focus {
   color: #404bbf;
-  text-decoration: none;
+  text-decoration-line: none;
 }
 .studio-link {
   color: #404bbf;
@@ -99,7 +96,7 @@ img {
   gap: 20px;
   position: relative;
 }
-.studio-link:hover::after {
+.studio-link::after {
   content: "";
   background-color: #404bbf;
   width: 48px;
